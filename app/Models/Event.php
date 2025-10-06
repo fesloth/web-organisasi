@@ -19,7 +19,6 @@ class Event extends Model
         'tanggal_mulai',
         'tanggal_selesai',
         'status',
-        'progress',
     ];
 
     protected $casts = [

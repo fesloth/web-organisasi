@@ -17,7 +17,6 @@ return new class extends Migration
             $table->date('tanggal_mulai');
             $table->date('tanggal_selesai');
             $table->enum('status', ['Mendatang', 'Berlangsung', 'Selesai'])->default('Mendatang');
-            $table->integer('progress')->default(0);
             $table->timestamps();
         });
     }

@@ -26,6 +26,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/program/{program}', [ProgramController::class, 'destroy'])->name('program.destroy');
 
     Route::get('/event', [EventController::class, 'index'])->name('event');
+    Route::post('/event', [EventController::class, 'store'])->name('events.store');
+    Route::delete('/event/{event}', [EventController::class, 'destroy'])->name('events.destroy');
 
     Route::get('/forum', [ForumController::class, 'index'])->name('forum');
     Route::post('/forum', [ForumController::class, 'store'])->name('forum.store');

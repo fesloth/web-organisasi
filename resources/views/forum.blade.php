@@ -66,7 +66,7 @@
                                         <div class="flex gap-2 mt-4">
                                             <!-- Tombol Edit -->
                                             <button @click="editMode = true"
-                                                class="px-3 py-1 text-sm bg-yellow-400 text-white rounded hover:bg-yellow-500">
+                                                class="px-3 py-1 text-sm bg-yellow-400 text-white rounded hover:bg-yellow-500 cursor-pointer">
                                                 Edit
                                             </button>
 
@@ -76,7 +76,7 @@
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit"
-                                                    class="px-3 py-1 text-sm bg-red-500 text-white rounded hover:bg-red-600">
+                                                    class="px-3 py-1 text-sm bg-red-500 text-white rounded hover:bg-red-600 cursor-pointer">
                                                     Hapus
                                                 </button>
                                             </form>
@@ -102,12 +102,12 @@
 
                                 <div class="flex gap-2">
                                     <button type="submit"
-                                        class="bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">
+                                        class="bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600 cursor-pointer">
                                         Simpan
                                     </button>
 
                                     <button type="button" @click="editMode = false"
-                                        class="bg-gray-400 text-white px-4 py-1 rounded hover:bg-gray-500">
+                                        class="bg-gray-400 text-white px-4 py-1 rounded hover:bg-gray-500 cursor-pointer">
                                         Batal
                                     </button>
                                 </div>
