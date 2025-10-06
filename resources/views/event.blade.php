@@ -173,12 +173,12 @@
 
                 <div class="flex justify-end gap-3">
                     <button @click="confirmDelete=false"
-                        class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300">Batal</button>
+                        class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 cursor-pointer">Batal</button>
                     <form :action="deleteUrl" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="submit"
-                            class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600">Hapus</button>
+                            class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 cursor-pointer">Hapus</button>
                     </form>
                 </div>
             </div>
