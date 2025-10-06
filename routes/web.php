@@ -19,7 +19,12 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::middleware('auth')->group(function () {
     Route::get('/', [BerandaController::class, 'index'])->name('beranda');
     Route::get('/anggota', [AnggotaController::class, 'index'])->name('anggota');
+
     Route::get('/program', [ProgramController::class, 'index'])->name('program');
+    Route::post('/program', [ProgramController::class, 'store'])->name('program.store');
+    Route::put('/program/{program}', [ProgramController::class, 'update'])->name('program.update');
+    Route::delete('/program/{program}', [ProgramController::class, 'destroy'])->name('program.destroy');
+
     Route::get('/event', [EventController::class, 'index'])->name('event');
 
     Route::get('/forum', [ForumController::class, 'index'])->name('forum');

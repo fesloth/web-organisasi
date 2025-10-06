@@ -13,8 +13,11 @@
 
                     <!-- Tombol + -->
                     <button @click="showForm = !showForm"
-                        class="bg-red-400 text-white px-3 py-2 rounded-full hover:bg-red-500 transition" title="Tambah Topik">
-                        <i class="fas" :class="showForm ? 'fa-minus' : 'fa-plus'"></i>
+                        class="bg-red-400 text-white px-2 py-2 rounded-full hover:bg-red-500 transition cursor-pointer" title="Tambah Topik">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
                     </button>
                 </div>
 
